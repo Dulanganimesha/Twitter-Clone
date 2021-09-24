@@ -1,24 +1,28 @@
+
+/* 
+
+
+*/
 .page {
     display: flex;
     justify-content: center;
   }
   
   .page__nav {
-    padding-top: 1px;
+    padding-top: 7px;
   }
   
   .center {
     width: 600px;
   }
-/*
- * Custom translucent site header
- */
 
 .site-header{
-  max-width: 596px;
-  background-color: #e5e5e5;
+  width: 100%;
+  padding-top: 5px;
+  background-color: white;
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
+  border: 1px #dee2e6 solid;
 }
 .site-header a {
   color: black;
@@ -29,12 +33,10 @@
 .container{
   display: flex;
   justify-content: space-between;
-  border: 1px solid black;
 }
 
 .main{
-  width: 596px;
-  border: 1px solid black;
+  width: 100%;
 }
 
 
@@ -42,13 +44,13 @@
   display: flex;
   flex-flow: row;
   height: 100%;
-  border: 1px black;
 
 }
 
 .card-left{
   width: 50px;
   height: 50px;
+  padding: 3px;
 }
 
 .profile{
@@ -57,7 +59,7 @@
 
 .card-right{
   width: 510px;
-  height: 110px;
+  height: 100%;
   padding-left: 5px;
   padding-top: 5px;
 }
@@ -102,7 +104,7 @@
 }
 
 .card-mid{
-  height: 40px;
+  height: fit-content;
   width: 506px;
   cursor: pointer;
 }
@@ -118,11 +120,25 @@
   -moz-box-orient: horizontal;
 }
 
+.mid-image{
+  height: 300px;
+  width: 500px;
+  display: block;
+  cursor: pointer;
+}
+
+.fa-image{
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
 .card-bottom{
   display: flex;
   align-items: flex-end;
   height: 32px;
   width: 506px;
+  margin-bottom: 5px;
 }
 
 .bottom-left{
@@ -203,11 +219,27 @@
 
   }
 
+
+
+  /* 
+  
+  
+  
+  */
   .aside {
+    display: flex;
     width: 350px;
     flex-shrink: 0;
     border-right: 1px solid lightgray;
   }
+
+  .aside-search{
+    width: 345px;
+    height: 45px;
+    background-color: greenyellow;
+  }
+
+  
 
   
 
