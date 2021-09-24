@@ -1,0 +1,21 @@
+{
+  "name": "twitter-clone",
+  "version": "0.0.1",
+  "description": "Twitter clone",
+  "keywords": ["twitter", "clone", "html", "css"],
+  "license": "MIT",
+  "author": "Dulanga Nimesha <idulanganimesha@gmaiil.com>",
+  "scripts": {
+    "clean": "rm -rf docs",
+    "build": "parcel build index.html 404.html --out-dir docs --public-url /twitter-clone/",
+    "dev": "parcel index.html --open",
+    "start": "npm run build && npm run dev"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "bootstrap": "^5.1.1"
+  }
+}
