@@ -232,8 +232,8 @@
     height: 1153px;
     flex-shrink: 0;
     flex-flow: column;
-    gap: 5px;
-    border-right: 1px solid lightgray;
+    gap: 10px;
+    background-color: white;
   }
 
   .aside-search{
@@ -241,9 +241,10 @@
     width: 348px;
     height: 50px;
     padding-top: 1px;
+    margin-left: 30px;
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
-    border: 1px #dee2e6 solid;
+    background-color: white;
   }
 
   .search-searchbox{
@@ -287,15 +288,21 @@
       display: flex;
       width: 348px;
       height: 510px;
+      margin-left: 30px;
       padding-left: 30px;
-      background-color: yellow;
       border-radius: 16px;
+      background-color: rgb(247, 249, 249);
+  
   }
 
   .trends-content{
     width: 288px;
     height: 510px;
-    background-color: green;
+  }
+
+  .trends-content:hover{
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.2s;
   }
 
   .trends-topcontain{
@@ -329,28 +336,90 @@
     display: flex;
     width: 36px;
     height: 24px;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
+    cursor: pointer;
   }
 
 
   .trends-bottomcontain{
     width: 288px;
     height: 82px;
-    background-color: coral;
-    border: 1px solid gray;
+    padding-top: 5px;
+    cursor: pointer;
+  }
+
+  .trends-bottomcontain :hover{
+    transition-property: box-shadow;
+    transition-duration: 0.2s;
+  }
+
+  .bottomcontain-wrapper{
+    display: flex;
+    justify-content: center;
+    width: 288px;
+    height: 73px;
+  }
+
+  .wrapper-left{
+    display: flex;
+    gap: 1px;
+    flex-flow: column;
+    width: 250px;
+    height: 58px;
+    padding-left: 5px;
+  }
+
+  .leftwrapper-top{
+    width: 250px;
+    height: 19px;
+    color: rgb(83, 100, 113);
+    font-weight: 400;
+    font-size: 13px;
+  }
+
+  .leftwrapper-mid{
+    width: 250px;
+    height: 22px;
+    color: rgb(15, 20, 25);
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .leftwrapper-bottom{
+    width: 250px;
+    height: 19px;
+    color: rgb(83, 100, 113);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+
+  .wrapper-right{
+    display: flex;
+    justify-content: center;
+
+    width: 38.75px;
+    height: 38.75px;
   }
 
   .trends-morecontent{
     width: 288px;
     height: 52px;
-    background-color: crimson;
+    padding-top: 2px;
+    padding-left: 5px;
+    color: rgb(29, 155, 240);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    cursor: pointer;
   }
 
   .aside-follow{
     width: 350px;
     height: 338px;
-    background-color: violet;
+    
   }
 
   .aside-bottom{
