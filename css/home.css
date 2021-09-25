@@ -229,17 +229,135 @@
   .aside {
     display: flex;
     width: 350px;
+    height: 1153px;
     flex-shrink: 0;
+    flex-flow: column;
+    gap: 5px;
     border-right: 1px solid lightgray;
   }
 
   .aside-search{
-    width: 345px;
-    height: 45px;
-    background-color: greenyellow;
+    display: flex;
+    width: 348px;
+    height: 50px;
+    padding-top: 1px;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    border: 1px #dee2e6 solid;
   }
 
-  
+  .search-searchbox{
+    display: flex;
+    width: 350px;
+    height: 45px;
+    flex-flow: row;
+    background-color: rgb(239, 243, 244);
+  }
+
+  .searchbox-icon{
+    display: flex;
+    width: 44px;
+    height: 43px;
+  }
+
+  .searchicon-svg{
+    margin-top: 12px;
+    margin-left: 10px;
+  }
+
+  .searchbox-input{
+    display: flex;
+    width: 304px;
+    height: 43px;
+  }
+
+  .search-inputfield{
+    width: 290px;
+    height: 35px;
+    padding: 5px 5px;
+    margin: 4px;
+    margin-right: 4px;
+    outline: none;
+    border: none;
+    font-weight: 400;
+    background-color: rgb(239, 243, 244);
+  }
+
+  .aside-trends{
+      display: flex;
+      width: 348px;
+      height: 510px;
+      padding-left: 30px;
+      background-color: yellow;
+      border-radius: 16px;
+  }
+
+  .trends-content{
+    width: 288px;
+    height: 510px;
+    background-color: green;
+  }
+
+  .trends-topcontain{
+    width: 288px;
+    height: 48px;
+    padding-top: 12px;
+    padding-left: 5px;
+    padding-right: 3px;
+  }
+
+  .topcontain-content{
+    display: flex;
+    flex-flow: row;
+    width: 275px;
+    height: 24px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .topcontain-left{
+    width: 220px;
+    height: 24px;
+  }
+
+  .topcont-text{
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .topcontain-right{
+    display: flex;
+    width: 36px;
+    height: 24px;
+    justify-content: end;
+    align-items: center;
+  }
+
+
+  .trends-bottomcontain{
+    width: 288px;
+    height: 82px;
+    background-color: coral;
+    border: 1px solid gray;
+  }
+
+  .trends-morecontent{
+    width: 288px;
+    height: 52px;
+    background-color: crimson;
+  }
+
+  .aside-follow{
+    width: 350px;
+    height: 338px;
+    background-color: violet;
+  }
+
+  .aside-bottom{
+    width: 350px;
+    height: 41px;
+    background-color: tan;
+  }
 
   
 
